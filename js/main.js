@@ -3,8 +3,8 @@ console.log("This is my index js file");
 
 // Initialize the news api parameters
 let source = 'the-times-of-india';
-let apiKey = 'df3b2dcc9b6945bfa45413926b7c9fa2';l
-let category="technology";
+let apiKey = 'df3b2dcc9b6945bfa45413926b7c9fa2';
+let category ="technology";
 const businessBtn = document.getElementById('business');
 
 
@@ -13,7 +13,7 @@ let newsAccordion = document.getElementById('newsAccordion');
 
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=${apiKey}`, true);
 
 // What to do when response is ready
 xhr.onload = function () {
